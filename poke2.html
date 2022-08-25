@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PokeSpin</title>
+    <link rel="stylesheet" href="poke2.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+</head>
+
+<body>
+
+    <p class="text_indication">Obtenez un Pokémon</p>
+    <div class="bodyResize">
+
+
+        <div class="loader">
+            <img src="assets/pokeball-logo.png">
+        </div>
+
+        <div class="decor"></div>
+
+        <span class="leg"></span>
+
+        <div class="main">
+
+            <div>
+
+                <div class="icons">
+                    <button class="left">
+					<i class="bi bi-caret-left-fill"></i>
+				</button>
+                    <img data-clic="1" src="assets/pokeIcon.png" style="max-width: 50px; max-height: 50px;" class="active">
+                    <img data-clic="2" src="assets/move-status.png">
+                    <img data-clic="3" src="assets/move-physical.png">
+                    <button class="right">
+					<i class="bi bi-caret-right-fill"></i>
+				</button>
+                </div>
+
+            </div>
+
+
+
+            <table class="active">
+                <tr>
+                    <th>Nom</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>Type(s)</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>N°ID</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>Capacités</th>
+                    <td></td>
+                </tr>
+            </table>
+
+            <table>
+                <tr>
+                    <th>PV</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>Attaque</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>Défense</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>Vitesse</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>Déf. Spé.</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>Atq. Spé.</th>
+                    <td></td>
+                </tr>
+            </table>
+
+            <table>
+                <tr>
+                    <td class="pokeSpell">
+                        <div class="divSpell">
+
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="pokeSpell">
+                        <div class="divSpell">
+
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="pokeSpell">
+                        <div class="divSpell">
+
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="pokeSpell">
+                        <div class="divSpell">
+
+                        </div>
+                    </td>
+                </tr>
+
+            </table>
+            <!--J'ajouterais cette fonctionnalité quand j'aurai le temps
+	
+            <div class="menu">
+                <div class="menuItem"><img src="pokeball-logo-32px.png"><button>MON POKEDEX</button></div>
+                <div class="menuItem"><img src="pokeball-logo-32px.png"><button>COMBATTRE</button></div>
+            </div>
+-->
+
+        </div>
+
+        <div class="containerSpin">
+            <button onclick="actualise()">PokeSpin</button>
+            <div class="resultatSpin">
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="poke2.js"></script>
+</body>
+
+</html>
